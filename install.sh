@@ -3,6 +3,22 @@
 # Usage:
 # install.sh accout@apple.com password
 
+# From geerlingguy - prep instructions for install
+#
+# See... https://github.com/geerlingguy/mac-dev-playbook
+#
+# xcode-select --install
+# install ansible
+# clone this repo
+# ansible-galaxy install requirements
+# ansible-plybook ...
+# Account password (apple itunes?)  when prompted.
+#
+# The following is from : https://github.com/JulianBour/mac-dev-playbook
+#
+# But I don't like the "hardcoding". I would like to generalise, and use a
+# seperate repo (private) for the environment config (similar to the dotfiles)
+#
 if [[ -z $(which brew) ]]; then
   echo "Installing Homebrew...";
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
